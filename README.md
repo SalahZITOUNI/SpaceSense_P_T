@@ -18,9 +18,9 @@ In case you don’t have it installed on your device, you can easily download it
 
 On Linux with Ubuntu distribution:
 
-   ```bash
-    sudo apt install docker.io
-    ```
+```bash
+sudo apt install docker.io
+ ```
 
 always cheek the Docker site to have it properly installed.
 
