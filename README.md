@@ -166,7 +166,7 @@ Now, we proceed with testing by selecting an image for segmentation:
 
 Having conducted tests with multiple images, we can confidently assert that our back-end feature is fully functional, indicating robust and reliable performance.
 
-6** Testing the back-end features without using docker:**
+6. ** Testing the back-end features without using docker:**
 
 To test the application without Docker, you'll need to set up a virtual environment:
 
