@@ -140,12 +140,18 @@ http://localhost:8000/docs
 
 now after you clicked on the link it will open the following page:
 
-
-put image here later 
-
+![Capture d'écran 2024-01-28 143723](https://github.com/SalahZITOUNI/SpaceSense_P_T/assets/157633302/69707120-421b-45bd-9326-f7d74cd203eb)
+ 
 Now we tested by choosing an image to segment it:
 
-put image here later 
+![Capture d'écran 2024-01-28 143904](https://github.com/SalahZITOUNI/SpaceSense_P_T/assets/157633302/ce73f1e4-d5ed-4517-a717-37345ec1de20)
+
+![Capture d'écran 2024-01-28 143927](https://github.com/SalahZITOUNI/SpaceSense_P_T/assets/157633302/eb5326fe-41a5-4657-b71b-08ebf8ffd71f)
+
+![Capture d'écran 2024-01-28 144153](https://github.com/SalahZITOUNI/SpaceSense_P_T/assets/157633302/7c787264-8509-4aaa-b5a3-d10e6da86656)
+
+![Capture d'écran 2024-01-28 144328](https://github.com/SalahZITOUNI/SpaceSense_P_T/assets/157633302/38ef923c-29d1-4bf6-9f22-d2a6c66c647b)
+
 
 And as we test with many images, we can say that our back-end feature is fully functional which mean the back-end feature works well.
 
