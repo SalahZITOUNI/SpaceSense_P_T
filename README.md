@@ -65,56 +65,55 @@ I. **Create docker file:**
 
 The docker file is very important when you create a container because this file will include the settings on how this container will works, the location of the score’s files, preparing the virtual environment by downloading the python dependencies and le URL of the application:
 
-    ```bash
-    # Use the specified image as the base
-    FROM python:3.10.12
+   ```bash
+   # Use the specified image as the base
+   FROM python:3.10.12
 
-    # Set a directory for the app
-    WORKDIR /usr/src/app
+   # Set a directory for the app
+   WORKDIR /usr/src/app
 
-    # Install system dependencies for OpenCV
-    RUN apt-get update \
-        && apt-get install -y --no-install-recommends libgl1 \
-        && rm -rf /var/lib/apt/lists/*
+   # Install system dependencies for OpenCV
+   RUN apt-get update \
+       && apt-get install -y --no-install-recommends libgl1 \
+       && rm -rf /var/lib/apt/lists/*
 
-    # Install Python dependencies
-    COPY requirements.txt ./
-    RUN pip install --no-cache-dir -r requirements.txt
+   # Install Python dependencies
+   COPY requirements.txt ./
+   RUN pip install --no-cache-dir -r requirements.txt
 
-    # Copy the current directory contents into the container at /usr/src/app
-    COPY . .
+   # Copy the current directory contents into the container at /usr/src/app
+   COPY . .
 
-    # Correct the command to run the application
-    CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
-
-    ```
+   # Correct the command to run the application
+   CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+   ```
 
 II. **Create docker composer file:**
 
 The docker composer file will include the version of the container its ports, its IP address, and the application web:
 
-```bash
-version: '3.9'
-
-services:
-  web:
-    build: .
-    command: sh -c "uvicorn main:app --reload --host 0.0.0.0 --port 8000"
-    ports:
-      - "8000:8000"
-    volumes:
-      - .:/usr/src/app
-
-    ```
+    ```bash
+    version: '3.9'
+    
+    services:
+      web:
+        build: .
+        command: sh -c "uvicorn main:app --reload --host 0.0.0.0 --port 8000"
+        ports:
+          - "8000:8000"
+        volumes:
+          - .:/usr/src/app
+    
+        ```
 
 III. **compose the container:**
 To compose the container you will need to go the location of your files,main.py ,Dockerfile , Docker composer …etc
 
 Now you lunch the docker composer using the following instruction:
 
-```bash
-sudo docker-compose -f /home/salah/SpaceSense/mobilesam-task/docker-compose.yaml up –build
-    ```
+  ```bash
+  sudo docker-compose -f /home/salah/SpaceSense/mobilesam-task/docker-compose.yaml up –build
+  ```
 
 make sur always to choose the correct path :
 
