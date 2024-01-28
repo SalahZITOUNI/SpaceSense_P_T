@@ -1,5 +1,5 @@
 # Internship Take Home Assignment - Software Engineer
-# User Manuel competence test SpaceSense
+# User Manuel skill test for SpaceSense
 The following Manuel or readme file will include the following parts:
 
 1. **Before starting.**
