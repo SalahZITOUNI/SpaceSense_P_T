@@ -38,8 +38,11 @@ or
     sudo apt-get install docker-compose-plugin
     ```
 There are so many ways to install it!
+
 2. **clone the repository:**
-To clone the repository use the following code :
+
+To clone the repository Navigate to the directory where you want the cloned directory to be added.
+Run the git clone command:
 
   ```bash
   git clone https://github.com/SalahZITOUNI/SpaceSense_P_T.git
