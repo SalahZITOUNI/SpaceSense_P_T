@@ -14,29 +14,24 @@ The following Manuel or readme file will include the following parts:
 ## Instructions:
 
 1. **1-before starting:**
-Before start testing our program, please make sure that you are using a recent version of Docker it is a very critical part of the testing process.
+Before start testing our program, please make sure that you are using the latest version of Docker as it is a very critical part of the testing process.
 
-In case you don’t have it installed on your device, you can easily download it on Windows from Docker site and all Docker features will be automatically installed.
+In case you don’t have it installed on your device, you can easily download it for Windows from Docker site and all Docker features  will be automatically installed and enabled.
 
-On Linux with Ubuntu distribution:
+If you are using Linux with Ubuntu distribution you can use the following instruction code to install it:
 
 ```bash
 sudo apt install docker.io
  ```
 
-always cheek the Docker site to have it properly installed.
+You can always cheek the Docker site to have it currently installed.
 
-On the other hand, if you are using Linux with Ubuntu distribution as I did its crucial to have docker compose installed. You can easily install it using the apt library using the following instruction:
-
-
-    ```bash
-    Sudo apt install docker compose.
-    ```
-or
+attention!, if you are using Linux with Ubuntu distribution as I did its crucial to have docker compose installed. You can easily install it using the apt library using the following instruction:
 
     ```bash
     sudo apt-get install docker-compose-plugin
     ```
+    
 There are so many ways to install it!
 
 2. **clone the repository:**
@@ -50,7 +45,7 @@ Run the git clone command:
 
 3. **Prepearing the environment:**
 
-To prepare the environment to have a back-end compatibility, we need to modify the file requirements.txt to include the necessary libraries so that our program work properly:
+To prepare the environment to have a back-end compatibility, we need to modify the file requirements.txt to include the necessary libraries so that our program work currently:
 
     ```bash
         torch
@@ -70,11 +65,11 @@ those libraries will assure that our main program main.py will function without 
 
 4. **Creating Docker container:**
 
-Creating Docker container in a crucial part of the test because this container will be the server where our program will work, and it will also assure that the program and its files will be separated from the main computer which will work as a layer of protection and will facilitate the tests.
+Creating a Docker container is a critical step in the testing process, as it functions akin to a server, hosting our program. This encapsulation not only segregates the program and its associated files from the primary system, thereby adding a layer of security but also simplifies the testing procedures.
 
 I. **Create docker file:**
 
-The docker file is very important when you create a container because this file will include the settings on how this container will works, the location of the score’s files, preparing the virtual environment by downloading the python dependencies and le URL of the application:
+The Dockerfile plays a pivotal role in container creation, serving as the blueprint that outlines the operational parameters of the container. It specifies vital details such as the configuration settings, the paths to the source files, and the steps for setting up the virtual environment, including the installation of Python dependencies. Additionally, it defines the URL for the application, ensuring that every aspect of the container's functionality is meticulously configured.
 
    ```bash
    # Use the specified image as the base
@@ -101,7 +96,7 @@ The docker file is very important when you create a container because this file 
 
 II. **Create docker composer file:**
 
-The docker composer file will include the version of the container its ports, its IP address, and the application web:
+The Docker Compose file is instrumental, detailing essential components of the container setup. It specifies the container's version, outlines the port mappings, designates the IP address, and incorporates the application's web interface. This comprehensive configuration ensures seamless interaction and connectivity within the containerized environment.
 
     ```bash
     version: '3.9'
@@ -123,37 +118,39 @@ To compose the container you will need to go the location of your files,main.py 
 Now you lunch the docker composer using the following instruction:
 
   ```bash
-  sudo docker-compose -f /home/salah/SpaceSense/mobilesam-task/docker-compose.yaml up –build
+  sudo docker-compose -f /home/salah/SpaceSense/Test/SpaceSense_P_T/docker-compose.yaml up -–build
   ```
 
 make sur always to choose the correct path :
 
     ```bash
-    sudo docker-compose -f /”your file location”/docker-compose.yaml up –build
+    sudo docker-compose -f /"your file location"/docker-compose.yaml up -–build
     ```
+Attention ! When you compose docker file it is essential to follow the syntaxe of the instruction docker-compose becouse some times when you do copie/paste the instruction you will get error message due to auto-formatting in text editors or word processors. Docker Compose wouldn't recognize the en dash as a valid argument prefix.
 
-it will take between five and seven minutes to create the container and lunch the application. 
+It is expected to take approximately five to seven minutes to build the container and launch the application.
 
-In case it hasn’t lunch the application on your browser you can lunch the application using the following link:
+In case it hasn’t lunched automatically the web application on your browser you can lunch the application using the following link:
 
 http://localhost:8000/
 
 5. **Testing the back-end features with docker:**
 
-now after you clicked on the link it will open the following page:
+Now after you have clicked on the link it will open the welcoming Page:
 
-As it’s demanded in the assignment we used a back-end API and we followed your suggestion and we have used Fast API, we have chosen fast API as it provides a good documentation and clear way to test the back-end features without the need to develop HTML interface.
+As it’s demanded in the assignment we used a back-end API and we followed your suggestion and we have used Fast API.
 
-To test it you will need to go to the following line:
+We have chosen for FastAPI due to its extensive documentation and the straightforward approach it offers for testing back-end functionalities, eliminating the necessity to construct an HTML interface.
+
+I have already incorporated a clickable link for easy access to the FastAPI documentation. However, you can also use the following link to explore and test the documentation:
 
 http://localhost:8000/docs
 
-
-now after you clicked on the link it will open the following page:
+After clicking the link, you will be directed to the following page:
 
 ![Capture d'écran 2024-01-28 143723](https://github.com/SalahZITOUNI/SpaceSense_P_T/assets/157633302/69707120-421b-45bd-9326-f7d74cd203eb)
  
-Now we tested by choosing an image to segment it:
+Now, we proceed with testing by selecting an image for segmentation:
 
 ![Capture d'écran 2024-01-28 143904](https://github.com/SalahZITOUNI/SpaceSense_P_T/assets/157633302/ce73f1e4-d5ed-4517-a717-37345ec1de20)
 
@@ -164,42 +161,41 @@ Now we tested by choosing an image to segment it:
 ![Capture d'écran 2024-01-28 144328](https://github.com/SalahZITOUNI/SpaceSense_P_T/assets/157633302/38ef923c-29d1-4bf6-9f22-d2a6c66c647b)
 
 
-And as we test with many images, we can say that our back-end feature is fully functional which mean the back-end feature works well.
+Having conducted tests with multiple images, we can confidently assert that our back-end feature is fully functional, indicating robust and reliable performance.
 
 6** Testing the back-end features without using docker:**
 
-To test the application without using docker you need to create virtual environment:
+To test the application without Docker, you'll need to set up a virtual environment:
 
     ```bash
     python -m venv venv    #on windows
     python3 -m venv venv   #on Linux
     ```
 
-then activate the virtual environment:
+Next, proceed to activate the virtual environment:
 
     ```bash
     source venv/bin/activate
     ```
 
-then you will need to install to requirement on the virtual environment:
+Then, you will need to install the required dependencies in the virtual environment:
 
     ```bash
     pip install -r requirements.txt
     ```
 
-and finally, you will need to start the unicorn server:
+And finally, you will need to initiate the Uvicorn server:
 
 
     ```bash
     uvicorn main:app --reload --host 0.0.0.0 --port 8000
     ```
-the rest of the testing as we did before.
 
-**Title:** P.S:
+Proceed with the rest of the testing as previously conducted.
 
-You may counter errors with the promotion access to folders generated and temp while testing without Docker.
+**Attention !:**
 
-You can override it using the following two commands lines:
+While testing without Docker, you might encounter access errors related to the 'generated' and 'temp' folders. You can resolve these issues by executing the following two command lines:
 
     ```bash
     sudo chmod 777 generated
