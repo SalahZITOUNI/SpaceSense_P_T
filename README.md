@@ -3,11 +3,12 @@
 The following Manuel or readme file will include the following parts:
 
 1. **before starting.**
-2. **Prepearing the environment.**
-3. **Creating Docker container.**
-4. **Testing the back-end features with docker.**
-5. **Testing the back-end features without using docker.**
-6. **the code of the main applicatin.**
+2. **clone the repository.**
+4. **Prepearing the environment.**
+5. **Creating Docker container.**
+6. **Testing the back-end features with docker.**
+7. **Testing the back-end features without using docker.**
+8. **the code of the main applicatin.**
 
 
 ## Instructions:
@@ -37,8 +38,14 @@ or
     sudo apt-get install docker-compose-plugin
     ```
 There are so many ways to install it!
+2. **clone the repository:**
+To clone the repository use the following code :
 
-2. **Prepearing the environment:**
+  ```bash
+  git clone https://github.com/SalahZITOUNI/SpaceSense_P_T.git
+  ```
+
+3. **Prepearing the environment:**
 
 To prepare the environment to have a back-end compatibility, we need to modify the file requirements.txt to include the necessary libraries so that our program work properly:
 
@@ -58,7 +65,7 @@ To prepare the environment to have a back-end compatibility, we need to modify t
     ```
 those libraries will assure that our main program main.py will function without problems:  
 
-3. **Creating Docker container:**
+4. **Creating Docker container:**
 
 Creating Docker container in a crucial part of the test because this container will be the server where our program will work, and it will also assure that the program and its files will be separated from the main computer which will work as a layer of protection and will facilitate the tests.
 
@@ -128,7 +135,7 @@ In case it hasn’t lunch the application on your browser you can lunch the appl
 
 http://localhost:8000/
 
-4. **Testing the back-end features with docker:**
+5. **Testing the back-end features with docker:**
 
 now after you clicked on the link it will open the following page:
 
@@ -156,7 +163,7 @@ Now we tested by choosing an image to segment it:
 
 And as we test with many images, we can say that our back-end feature is fully functional which mean the back-end feature works well.
 
-5** Testing the back-end features without using docker:**
+6** Testing the back-end features without using docker:**
 
 To test the application without using docker you need to create virtual environment:
 
@@ -199,7 +206,7 @@ and :
     ```bash
     sudo chmod 777 temp
     ```
- 6. **the code of the main applicatin:**
+ 7. **the code of the main applicatin:**
 
         ```bash
             #Here we start by importing necessary libraries
