@@ -2,13 +2,13 @@
 # User Manuel competence test SpaceSense
 The following Manuel or readme file will include the following parts:
 
-1. **before starting.**
-2. **clone the repository.**
+1. **Before starting.**
+2. **Clone the repository.**
 4. **Prepearing the environment.**
 5. **Creating Docker container.**
 6. **Testing the back-end features with docker.**
 7. **Testing the back-end features without using docker.**
-8. **the code of the main applicatin.**
+8. **The code of the main applicatin.**
 
 
 ## Instructions:
