@@ -138,6 +138,9 @@ http://localhost:8000/
 
 Now after you have clicked on the link it will open the welcoming Page:
 
+![image](https://github.com/SalahZITOUNI/SpaceSense_P_T/assets/157633302/2fdeabc0-8b7a-4834-91df-71760a33fbb6)
+
+
 As it’s demanded in the assignment we used a back-end API and we followed your suggestion and we have used Fast API.
 
 We have chosen for FastAPI due to its extensive documentation and the straightforward approach it offers for testing back-end functionalities, eliminating the necessity to construct an HTML interface.
