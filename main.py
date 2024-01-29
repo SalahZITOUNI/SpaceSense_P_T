@@ -118,7 +118,7 @@ async def segment_image(file: UploadFile = File(...)):
             status_code=500,
             content={"message": "An error occurred during image processing.", "detail": str(e)}
         )
-# Optional: Add a root endpoint for health check or instructions
+#Add a root endpoint for health check and to show welcome message
 @app.get("/", response_class=HTMLResponse)
 def read_root():
     return """
