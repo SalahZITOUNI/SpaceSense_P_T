@@ -28,9 +28,9 @@ You can always cheek the Docker site to have it currently installed.
 
 attention!, if you are using Linux with Ubuntu distribution as I did its crucial to have docker compose installed. You can easily install it using the apt library using the following instruction:
 
-   ```bash
-    sudo apt-get install docker-compose-plugin
-    ```
+    ```bash
+     sudo apt-get install docker-compose-plugin
+     ```
     
 There are so many ways to install it!
 
@@ -40,8 +40,8 @@ To clone the repository Navigate to the directory where you want the cloned dire
 Run the git clone command:
 
   ```bash
-  git clone https://github.com/SalahZITOUNI/SpaceSense_P_T.git
-  ```
+   git clone https://github.com/SalahZITOUNI/SpaceSense_P_T.git
+   ```
 
 3. **Prepearing the environment:**
 
@@ -153,7 +153,7 @@ After clicking the link, you will be directed to the following page:
 
 ![Capture d'écran 2024-01-28 143723](https://github.com/SalahZITOUNI/SpaceSense_P_T/assets/157633302/69707120-421b-45bd-9326-f7d74cd203eb)
  
-Now, we proceed with testing by selecting an image for segmentation:
+Now, we will move on to the testing phase. Begin by clicking on 'Try it Out,' then select 'Choose File' to pick the image you wish to test the segmentation feature on and then execute it should takes a few seconds to process the image.
 
 ![Capture d'écran 2024-01-28 143904](https://github.com/SalahZITOUNI/SpaceSense_P_T/assets/157633302/ce73f1e4-d5ed-4517-a717-37345ec1de20)
 
