@@ -175,7 +175,7 @@ You can find your segmented, tested image in the generated folder. The container
 
 6. **Testing the back-end features without using docker:**
 
-To test the application without Docker, you'll need to set up a virtual environment:
+To test the application without Docker, you'll need to set up a virtual environment in your repository location:
 
    ```bash
     python -m venv venv    #on windows
