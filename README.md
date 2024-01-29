@@ -28,7 +28,7 @@ sudo apt install docker.io
 
 You can always cheek the Docker site to have it currently installed.
 
-attention!, if you are using Linux with Ubuntu distribution as I did its crucial to have docker compose installed. You can easily install it using the apt library using the following instruction:
+Attention!, if you are using Linux with Ubuntu distribution as I did its crucial to have docker compose installed. You can easily install it using the apt library using the following instruction:
 
   ```bash
    sudo apt-get install docker-compose-plugin
