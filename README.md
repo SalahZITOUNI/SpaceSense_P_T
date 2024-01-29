@@ -128,6 +128,13 @@ make sur always to choose the correct path :
    ```bash
     sudo docker-compose -f /"your file location"/docker-compose.yaml up -–build
    ```
+
+If your terminal is already in the correct path:
+
+   ```bash
+    sudo docker-compose -f docker-compose.yaml up --build
+   ```
+
 Attention ! When you compose docker file it is essential to follow the syntaxe of the instruction docker-compose becouse some times when you do copie/paste the instruction you will get error message due to auto-formatting in text editors or word processors. Docker Compose wouldn't recognize the en dash as a valid argument prefix.
 
 It is expected to take approximately five to seven minutes to build the container and launch the application.
