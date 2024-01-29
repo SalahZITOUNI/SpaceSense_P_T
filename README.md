@@ -50,7 +50,7 @@ Run the git clone command:
 To prepare the environment to have a back-end compatibility, we need to modify the file requirements.txt to include the necessary libraries so that our program work currently:
 
    ```bash
-        torch
+    torch
     torchvision
     timm
     opencv-python
