@@ -215,7 +215,7 @@ and :
    ```bash
     sudo chmod 777 temp
    ```
- 7. **the code of the main applicatin:**
+ 7. **The code of the main applicatin:**
 
     ```bash
             #Here we start by importing necessary libraries
