@@ -63,7 +63,7 @@ To prepare the environment to have a back-end compatibility, we need to modify t
     Pillow
     python-multipart
    ```
-those libraries will assure that our main program main.py will function without problems:  
+Those libraries will assure that our main program main.py will function without problems:  
 
 4. **Creating Docker container:**
 
