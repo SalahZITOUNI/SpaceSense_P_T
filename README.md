@@ -2,7 +2,7 @@
 # User Manuel skill test for SpaceSense
 The following Manuel or readme file will include the following parts:
 
-1. **Before starting.**
+1. **Important information before starting.**
 2. **Clone the repository.**
 4. **Prepearing the environment.**
 5. **Creating Docker container.**
@@ -10,10 +10,12 @@ The following Manuel or readme file will include the following parts:
 7. **Testing the back-end features without using docker.**
 8. **The code of the main applicatin.**
 
+## Introduction:
+This README file provides a comprehensive explanation of all aspects of the coding process involved in this project. The repository contains all the necessary code files, meticulously organized for ease of navigation and understanding.
 
 ## Instructions:
 
-1. **1-before starting:**
+1. **Important information before starting:**
 Before start testing our program, please make sure that you are using the latest version of Docker as it is a very critical part of the testing process.
 
 In case you don’t have it installed on your device, you can easily download it for Windows from Docker site and all Docker features  will be automatically installed and enabled.
