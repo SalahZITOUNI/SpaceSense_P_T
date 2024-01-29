@@ -171,7 +171,7 @@ Now, we will move on to the testing phase. Begin by clicking on 'Try it Out,' th
 
 Having conducted tests with multiple images, we can confidently assert that our back-end feature is fully functional, indicating robust and reliable performance.
 
-You can find your segmented, tested image in the generated folder. The container is configured to automatically save the source file, eliminating the need to manually copy them from the container.
+You can find your segmented, tested image in the generated folder. The container is configured to automatically save the generated file, eliminating the need to manually copy them from the container.
 
 6. **Testing the back-end features without using docker:**
 
