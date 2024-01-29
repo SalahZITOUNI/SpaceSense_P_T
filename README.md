@@ -123,7 +123,7 @@ Now you lunch the docker composer using the following instruction:
   sudo docker-compose -f /home/salah/SpaceSense/Test/SpaceSense_P_T/docker-compose.yaml up --build
   ```
 
-make sur always to choose the correct path :
+make sure always to choose the correct path :
 
    ```bash
     sudo docker-compose -f /"your file location"/docker-compose.yaml up --build
