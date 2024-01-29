@@ -28,9 +28,9 @@ You can always cheek the Docker site to have it currently installed.
 
 attention!, if you are using Linux with Ubuntu distribution as I did its crucial to have docker compose installed. You can easily install it using the apt library using the following instruction:
 
-    ```bash
-     sudo apt-get install docker-compose-plugin
-     ```
+  ```bash
+   sudo apt-get install docker-compose-plugin
+   ```
     
 There are so many ways to install it!
 
@@ -47,7 +47,7 @@ Run the git clone command:
 
 To prepare the environment to have a back-end compatibility, we need to modify the file requirements.txt to include the necessary libraries so that our program work currently:
 
-    ```bash
+   ```bash
         torch
     torchvision
     timm
@@ -60,7 +60,7 @@ To prepare the environment to have a back-end compatibility, we need to modify t
     numpy
     Pillow
     python-multipart
-    ```
+   ```
 those libraries will assure that our main program main.py will function without problems:  
 
 4. **Creating Docker container:**
@@ -98,7 +98,7 @@ II. **Create docker composer file:**
 
 The Docker Compose file is instrumental, detailing essential components of the container setup. It specifies the container's version, outlines the port mappings, designates the IP address, and incorporates the application's web interface. This comprehensive configuration ensures seamless interaction and connectivity within the containerized environment.
 
-    ```bash
+   ```bash
     version: '3.9'
     
     services:
@@ -110,7 +110,7 @@ The Docker Compose file is instrumental, detailing essential components of the c
         volumes:
           - .:/usr/src/app
     
-        ```
+   ```
 
 III. **compose the container:**
 To compose the container you will need to go the location of your files,main.py ,Dockerfile , Docker composer …etc
@@ -123,9 +123,9 @@ Now you lunch the docker composer using the following instruction:
 
 make sur always to choose the correct path :
 
-    ```bash
+   ```bash
     sudo docker-compose -f /"your file location"/docker-compose.yaml up -–build
-    ```
+   ```
 Attention ! When you compose docker file it is essential to follow the syntaxe of the instruction docker-compose becouse some times when you do copie/paste the instruction you will get error message due to auto-formatting in text editors or word processors. Docker Compose wouldn't recognize the en dash as a valid argument prefix.
 
 It is expected to take approximately five to seven minutes to build the container and launch the application.
@@ -170,29 +170,29 @@ Having conducted tests with multiple images, we can confidently assert that our 
 
 To test the application without Docker, you'll need to set up a virtual environment:
 
-    ```bash
+   ```bash
     python -m venv venv    #on windows
     python3 -m venv venv   #on Linux
-    ```
+   ```
 
 Next, proceed to activate the virtual environment:
 
-    ```bash
+   ```bash
     source venv/bin/activate
-    ```
+   ```
 
 Then, you will need to install the required dependencies in the virtual environment:
 
-    ```bash
+   ```bash
     pip install -r requirements.txt
-    ```
+   ```
 
 And finally, you will need to initiate the Uvicorn server:
 
 
-    ```bash
+   ```bash
     uvicorn main:app --reload --host 0.0.0.0 --port 8000
-    ```
+   ```
 
 Proceed with the rest of the testing as previously conducted.
 
@@ -200,17 +200,17 @@ Proceed with the rest of the testing as previously conducted.
 
 While testing without Docker, you might encounter access errors related to the 'generated' and 'temp' folders. You can resolve these issues by executing the following two command lines:
 
-    ```bash
+   ```bash
     sudo chmod 777 generated
-    ```
+   ```
 and :
 
-    ```bash
+   ```bash
     sudo chmod 777 temp
-    ```
+   ```
  7. **the code of the main applicatin:**
 
-        ```bash
+    ```bash
             #Here we start by importing necessary libraries
         import os
         import numpy as np
