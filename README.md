@@ -119,10 +119,6 @@ To compose the container you will need to go the location of your files,main.py 
 
 Now you lunch the docker composer using the following instruction:
 
-  ```bash
-  sudo docker-compose -f /home/salah/SpaceSense/Test/SpaceSense_P_T/docker-compose.yaml up --build
-  ```
-
 Always make sure to choose the correct path :
 
    ```bash
