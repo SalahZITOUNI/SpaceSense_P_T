@@ -145,7 +145,7 @@ Now after you have clicked on the link it will open the welcoming Page:
 
 As it’s demanded in the assignment we used a back-end API and we followed your suggestion and we have used Fast API.
 
-We have chosen for FastAPI due to its extensive documentation and the straightforward approach it offers for testing back-end functionalities, eliminating the necessity to construct an HTML interface.
+We have chosen FastAPI due to its extensive documentation and the straightforward approach it offers for testing back-end functionalities, eliminating the necessity to construct an HTML interface.
 
 I have already incorporated a clickable link for easy access to the FastAPI documentation. However, you can also use the following link to explore and test the documentation:
 
