@@ -1,5 +1,4 @@
-# Internship Take Home Assignment - Software Engineer
-# User Manuel skill test for SpaceSense
+# Developing Back-end Features for an Image Segmentation Application
 The following Manuel or readme file will include the following parts:
 
 1. **Important information before starting.**
